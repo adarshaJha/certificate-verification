@@ -1,0 +1,313 @@
+body, textarea, input, select, option, button {
+       color: #5f6a83;
+    font-weight: 400;
+    font-family: Lato, sans-serif;
+    letter-spacing: 0.4px;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+
+.demologo{
+       width: 261px;
+    margin-top: -4px;
+    margin-left: 5px;
+}
+
+html {
+  height: 100%;
+}
+a,a:hover {
+    color: #6b758d;
+    text-decoration: none ;
+}
+a:hover{
+    color: #23293a
+
+}
+.cardsp{
+        margin-top: 20px;
+    text-align: justify;
+    
+}
+h2{
+    color: #23293a;
+    font-size: 14px;
+}
+
+#maincont{
+    text-align: center;
+}
+
+/*body:before {
+  content: "";
+  height: 0px;
+  padding: 0px;
+  border: 130em solid #313440;
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  z-index: 2;
+  display: block;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-animation: puff 0.5s 1.8s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards, borderRadius 0.2s 2.3s linear forwards;
+  animation: puff 0.5s 1.8s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards, borderRadius 0.2s 2.3s linear forwards;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#footer {
+        font-size: 12px;
+    margin-top: 140px;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+     margin-top: 140px; 
+    position: absolute;
+    bottom: 30px;
+    left: 6%;
+}
+    
+
+#footer ul {
+    overflow: hidden;
+    list-style: none;
+    margin-right: 0px;
+    padding: 0;
+}
+#footer ul li {
+    position: relative;
+    float: left;
+    margin: 0 16px 0 0;
+}
+
+#html_element{
+        width: 300px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+
+
+#navbar{
+	background: rgb(34, 40, 58);
+    color: rgb(255, 255, 255);
+    height: 49px;
+}
+#logo{
+	    width: 275px;
+    margin-top: -6px;
+}
+.form-container{
+	width: 285px;
+    background: white;
+    padding: 30px;
+    margin: 0 auto;
+    margin-top: 50px;
+    box-shadow: 0 1px 9px rgba(24,59,101,.37);
+    text-align: center;
+    margin-bottom: 17%;
+}
+input, textarea {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    color: #2C3E50;
+    font-size: 13px;
+}
+
+ input:focus, textarea:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 1px solid #ee0979;
+    outline-width: 0;
+    transition: All 0.5s ease-in;
+    -webkit-transition: All 0.5s ease-in;
+    -moz-transition: All 0.5s ease-in;
+    -o-transition: All 0.5s ease-in;
+}
+
+ input,  textarea {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    color: #2C3E50;
+    font-size: 13px;
+}
+.or{
+        color: #22293a;
+    font-size: 17px;
+    margin-top: 15px;
+}
+.heading{
+        color: #22293a;
+    font-weight: 600;
+    font-size: 17px;
+}
+.formrows{
+	margin-bottom: 15px;
+	margin-top: 15px;
+}
+input#xrkaddress {
+    width: 96%;
+}
+#createWalletBtn {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+}
+p.text-center.heading{
+    margin-top: 30px;
+}
+
+button {
+    float: none !important;
+    margin: 0 auto;
+    overflow: hidden;
+    float: left;
+    min-width: 80px;
+    padding: 7.5px 27px;
+    box-shadow: 0 2px 4px rgba(11,31,79,.5);
+    border-radius: 4px;
+    border: 0;
+    background: #22283a;
+    color: #fff ;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    columns: white;
+}
+button.close {
+    box-shadow: none;
+    float: right !important;
+    outline: none;
+}
+
+button.btn.btn-default.createWalBtn {
+    background: black;
+    border: none;
+    color: white;
+}
+#createWalBtn : hover {
+    background: #ee0979;
+    outline: none;
+}
+
+*{
+    outline: none;
+}
+@media only screen and (max-width:  900px){
+	.form-container{
+		width: 90%;
+	}
+	#fullname{
+		margin-bottom: 10px;
+		margin-top: 10px;
+	}
+
+	#createWalletBtn {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 200px;
+	}
+
+    #footer{
+        width: 89% !important;
+        position: relative !important;
+        left: 1.8%;
+    }
+
+}
+
+@media only screen and (max-width: 640px){
+
+    #footer{
+        width: 83%;
+        left: 1%;
+    }
+}
+
+@media only screen and (max-width: 500px){
+	input#xrkaddress {
+    width: 100%;
+	}
+    #footer {
+    font-size: 12px;
+    margin-top: 140px;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    position: relative !important;
+    /*margin-top: 140px;*/
+}
+
+}
+
+
+@media only screen and (max-width: 421px){
+    #html_element {
+    width: 160px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    overflow: hidden;
+}
+
+}
+
+
+
+
+
+
+
+html {
+  min-height: 100%;
+  position: relative;
+}
+  body {
+    margin-bottom: $height-footer;
+  }
+  #footer {
+    bottom: 20px;
+    width: 100%;
+    position: absolute;
+    /*height: $height-footer;*/
+    /*background-color: #f5f5f5;*/
+    
+  }
+
+
+  #footer ul { overflow: hidden; list-style: none; margin-right: 0px; padding: 0; width: 84%;
+    margin: auto; }
+ #footer ul li { position: relative; float: left; margin: 0 16px 0 0; }
+ #footer ul li:before { content: "|"; display: block; position: absolute; left: 100%; top: 0; width: 16px; text-align: center; }
+#footer a { color: #7f91a3; }
+
