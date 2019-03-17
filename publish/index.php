@@ -101,7 +101,10 @@ include_once 'include/header.php';
                 var publicAddress = parsejson.result[0].address;
                 var publicKey = parsejson.result[0].pubkey;
                 var privKey = parsejson.result[0].privkey;
-                $("#pubKey").text(publicKey) 
+                $("#pubKey").text(publicKey);
+                $("#pubAddress").text(publicAddress);
+                $("#privKey").text(privKey);
+                $(".aaccountdiv").css("display", "block");
                 console.log(publicKey);
                 console.log(publicAddress, "createkeypair response here");
                 jQuery.ajax({
@@ -124,5 +127,31 @@ include_once 'include/header.php';
         
     })
 
+    $("#loginbtn").click(function(){
+        var publicAddress = $("#publicAddress").val();
+        console.log("publicAddress", publicAddress);
+        if( publicAddress == ""){
+            $("#publicAddress").css("border-color", "red");
+        }else{
+            jQuery.ajax({
+                    type: "POST",
+                    url: 'cvapi/api/importaddress.php',
+                    data:{
+                        publicAddress : publicAddress
+                    },
+                    // async: false,
+                    success: function(Response) {
+                        var response = Response;
+                        var parsejson = JSON.parse(response);
+                        console.log(parsejson.result, "loginbtn result response here");
+                        if( parsejson.result == null ){
+                            window.location.href="/certificate-verification/publish/publish.php";
+                        }else{
+                            $("#publicAddress").css("border-color", "red");
+                        }
+                    }
+                });
+        }
+    })
  </script>
      
